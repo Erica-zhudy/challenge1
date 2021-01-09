@@ -1,3 +1,5 @@
+# Project done by Daiying (Erica) Zhu, Anousha Sidarshinee Jeetun, Madalina Benea, Stella (Meilun) Peng
+
 import random
 
 Upper_set = False
@@ -33,11 +35,11 @@ while Range_valid is False:
         print("Sorry, upper limit is lower than lower limit. Please reset range.\n")
 
 value = random.randint(lower_bound, upper_bound)
-print(value)
+
 
 while Guessed is False:
     try:
-        guessed_number = int(input("Please guess a number within the range."))
+        guessed_number = int(input("Please guess a number within the range.\n"))
 
         if guessed_number < value:
             print ("Incorrect. The number is higher.")
@@ -48,5 +50,5 @@ while Guessed is False:
             print ("Congratulations! You guessed the number.")
             Guessed = True
     except:
-        print("Error.Only integers are allowed.")
+        print("Error. Only integers are allowed.")
         pass
